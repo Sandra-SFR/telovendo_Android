@@ -42,7 +42,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductH
     @Override
     public void onBindViewHolder(ProductHolder holder, int position) {
         holder.productName.setText(productList.get(position).getName());
-        holder.productDescription.setText(productList.get(position).getCategory());
+        holder.productCategory.setText(productList.get(position).getCategory());
         holder.productDone.setChecked(productList.get(position).isAvailable());
     }
 
@@ -65,7 +65,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductH
 
         public class ProductHolder extends RecyclerView.ViewHolder {
             public TextView productName;
-            public TextView productDescription;
+            public TextView productCategory;
             public CheckBox productDone;
             public Button favProductButton;
             public Button seeDetailsButton;
@@ -78,7 +78,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductH
                 snackBarView = parentView;
 
                 productName = view.findViewById(R.id.product_name);
-                productDescription = view.findViewById(R.id.product_description);
+                productCategory = view.findViewById(R.id.product_category);
                 productDone = view.findViewById(R.id.check_product_fav);
                 favProductButton = view.findViewById(R.id.buttonFav);
                 seeDetailsButton = view.findViewById(R.id.see_details_button);
