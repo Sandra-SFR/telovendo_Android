@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Telovendo</string>
+    <string name="description">Descripción</string>
+    <string name="product_detail">Detalles del producto</string>
+</resources>
